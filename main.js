@@ -25,18 +25,18 @@ while (producto != "esc") {
         };
         productos.push(productoObjeto);
 
-        console.log(`Item: ${productoObjeto.nombre} Cantidad: ${productoObjeto.cantidad} Precio: ${productoObjeto.precio} Precio Total: $ ${productoObjeto.precioTotal}`);
+        console.log("Item: ${productoObjeto.nombre} Cantidad: ${productoObjeto.cantidad} Precio: ${productoObjeto.precio} Precio Total: $ ${productoObjeto.precioTotal}");
         sumaPrecioTotal += productoObjeto.precioTotal;
     }
     producto = prompt("Ingrese nombre del producto - para finalizar escriba esc");
 }
 
-alert(`El valor total del inventario ingresado el día ${fecha} es de $ ${sumaPrecioTotal}`);
+alert("El valor total del inventario ingresado el día ${fecha} es de $ ${sumaPrecioTotal}");
 
 //muestra por consola los nombres de los productos dentro del array
 console.log("Nombres de los productos:");
 for (let i = 0; i < productos.length; i++) {
-  console.log(`Producto ${i + 1}: ${productos[i].nombre}`);
+  console.log("Producto ${i + 1}: ${productos[i].nombre}");
 }
 
 
