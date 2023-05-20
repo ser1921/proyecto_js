@@ -1,44 +1,47 @@
 const fecha = prompt("Ingrese la fecha");
 console.log("Fecha: " + fecha);
 
-let producto = prompt("Ingrese nombre del producto - para finalizar escriba esc");
-let productos = []; // array para almacenar los productos
-let sumaPrecioTotal = 0;
-
-//función para sacar el valor de cada producto
-function multiplicar(cantidad, precio) {
-    return cantidad * precio;
-}
-
-while (producto != "esc") {
-    if (producto != "esc") {
-        let cantidad = parseInt(prompt("Ingrese cantidad"));
-        let precio = parseInt(prompt("Ingrese precio unitario"));
-        let precioTotalItem = multiplicar(cantidad, precio);
-
-        // crear el objeto producto y agregarlo al array "productos"
-        let productoObjeto = {
-            nombre: producto,
-            cantidad: cantidad,
-            precio: precio,
-            precioTotal: precioTotalItem
-        };
-        productos.push(productoObjeto);
-
-        console.log(`Item: ${productoObjeto.nombre} Cantidad: ${productoObjeto.cantidad} Precio: ${productoObjeto.precio} Precio Total: $ ${productoObjeto.precioTotal}`);
-        sumaPrecioTotal += productoObjeto.precioTotal;
+class Producto {
+    constructor(nombre, cantidad, precio) {
+        this.nombre = nombre;
+        this.cantidad = cantidad;
+        this.precio = precio;
     }
-    producto = prompt("Ingrese nombre del producto - para finalizar escriba esc");
+    sumaIva() {
+        return this.precio * 1.21;  // método para calcular iva
+    }
+    precioTotalItem() {
+        return this.precio * this.cantidad // método para calcular valor total de item ingresado        
+    }
 }
 
-alert(`El valor total del inventario ingresado el día ${fecha} es de $ ${sumaPrecioTotal}`);
+const productos = []; //array con los productos creardos
 
-//muestra por consola los nombres de los productos dentro del array
-console.log("Nombres de los productos:");
-for (let i = 0; i < productos.length; i++) {
-    console.log(`Producto ${i + 1}: ${productos[i].nombre}`);
+while (true) {
+    const nombre = prompt("Ingrese el nombre del producto (presione Esc para salir):");
+
+    if (nombre === null) {
+        // El usuario presionó la tecla "Esc"
+        break;
+    }
+
+    const cantidad = parseInt(prompt("Ingrese la cantidad:"));
+    const precio = parseFloat(prompt("Ingrese el precio:"));
+
+    const producto = new Producto(nombre, cantidad, precio);
+    productos.push(producto);
 }
 
+console.log(productos); //muestra los objetos dentro del array
 
+console.log("Valor total de cada producto:");  //calcula el valor del total de cada producto
+productos.forEach((nombre) => {
+  const total = nombre.precioTotalItem();
+  console.log(`${nombre.nombre}: ${total}`);
+});
 
-
+console.log("Valor unitario mas iva:"); // calcula el iva de un producto
+productos.forEach((nombre) => {
+  const total = nombre.sumaIva();
+  console.log(`${nombre.nombre}: ${total}`);
+});
