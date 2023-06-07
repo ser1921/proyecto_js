@@ -28,22 +28,24 @@ const crearProducto = () => { //funcion para crear productos
     })
 }
 
-const verItems = () => {  //funcion para ver los items creados en tarjetas
-    const tarjetas = document.querySelector("#cards")
-    items.forEach(item =>{
-        const div = document.createElement("div")
-        div.classList.add("item")
-        div.innerHTML = `<h3>${item.nombre}</h3>
-                        <span>${item.marca}</span>
-                        <span>${item.descripcion}</span>
-                        <span>${item.cantidad}</span>
-                        <span>${item.precio}</span>
-        `
-        tarjetas.append(div)   
-    })
+// mensaje al crear producto
 
-}
-verItems()
+const click = document.getElementById('click');
+click.addEventListener('click', function () {
+    Toastify({
+
+        text: "Producto creado",
+        duration: 3000,
+        position: "center",
+        style: {
+            background: "#5cdb95",           
+        }
+
+    }).showToast();
+});
+
+
+
 crearProducto()
 
 

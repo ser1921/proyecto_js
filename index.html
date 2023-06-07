@@ -1,3 +1,5 @@
+<!-- EL INDEX ESTA DESTINADO AL ADMIN DE LA APLICACION PARA EL INGRESO DE PRODUCTOS -->
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,12 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventario general</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
     <header>
         <h1>Ingreso de Productos</h1>
+        <h2><a href="./pages/productos.html"> Ir a inventario general</a></h2>
     </header>
 
     <main>
@@ -31,18 +35,16 @@
 
             <input type="number" name="precio" placeholder="Precio" required>
 
-            <input type="submit" value="CrearItem">
+            <input id="click" type="submit" value="CrearItem">
         </form>
     </main>
 
-    <section id="cards">
 
-    </section>
 
     <footer>
         <span>Todos los derechos reservados</span>
     </footer>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./js/main.js"></script>
 </body>
 

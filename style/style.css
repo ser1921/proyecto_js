@@ -7,21 +7,22 @@ body {
     background-color: black;
     color: #5cdb95;
 }
-header{
+
+header {
     text-align: center;
     color: #5cdb95;
     height: 25vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
 }
 
-a{
+a {
     text-decoration: none;
     color: #5cdb95;
     text-align: center;
-    padding: 50px
+    
 }
 
 .container {
@@ -81,17 +82,59 @@ footer {
     justify-content: center;
 }
 
-.item{
-    width: 150px;
-    height: 150px;
+.item {
+    width: 200px;
+    height: 300px;
     background-color: black;
     padding: 10px;
     margin: 10px;
     border: #5cdb95 solid 3px;
+    border-radius: 4%;
     color: white;
     text-align: center;
 }
-section{
-    display: flex;
 
+.oculto {
+    display: none;
+}
+
+.customButton{
+    background-color: #000000;
+    color: #5cdb95;
+    border: 2px solid #5cdb95;
+    padding: 5px 25px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;    
+}
+
+.customButton:hover {
+    border-color: #5cdb95;
+    box-shadow: 0 0 8px 0 #5cdb95;
+    background-color: #5cdb95;
+    color: #000000;
+    font-weight: 600;
+}
+
+.contenedorCards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap
+}
+.navProductos{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+ul{
+    display: flex;
+    
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
 }
