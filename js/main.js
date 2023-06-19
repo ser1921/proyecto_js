@@ -27,25 +27,6 @@ const crearProducto = () => { //funcion para crear productos
         crearItem.reset()
     })
 }
-
-// mensaje al crear producto
-
-const click = document.getElementById('click');
-click.addEventListener('click', function () {
-    Toastify({
-
-        text: "Producto creado",
-        duration: 3000,
-        position: "center",
-        style: {
-            background: "#5cdb95",           
-        }
-
-    }).showToast();
-});
-
-
-
 crearProducto()
 
 

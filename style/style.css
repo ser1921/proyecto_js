@@ -138,3 +138,19 @@ li{
     list-style-type: none;
     padding: 10px;
 }
+
+h2{
+    text-align: center;
+    color: #5cdb95;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    }
+
+    .numberForm{
+        width: auto;
+        height: auto;
+        text-align: center;    
+    }

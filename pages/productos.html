@@ -1,4 +1,4 @@
-<!-- HTML DESTINADA AL USUARIO -->
+<!-- EL INDEX ESTA DESTINADO AL ADMIN DE LA APLICACION PARA EL INGRESO DE PRODUCTOS -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -7,29 +7,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Admin</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
-    <header class="navProductos">
-        <h1>ElectroCoder</h1>
-        <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Sucursales</li>
-                <li>Contacto</li>
-                <li>Carrito</li>
-            </ul>
-        </nav>
+    <header>
+        <h1>Ingreso de Productos</h1>
+        <h2><a href="../index.html"> Ir a Pagina inicial</a></h2>
     </header>
 
     <main>
-        <section id="cards" class="contenedorCards">
+        <form id="crearItem" class="container">
 
-        </section>
+            <input class="customInput" type="text" name="nombre" placeholder="Nombre del item" required>
+
+
+            <input type="text" name="marca" placeholder="Marca del item" required>
+
+
+            <input type="text" name="descripcion" placeholder="Descipción" required>
+
+
+            <input type="number" name="cantidad" placeholder="Cantidad" required>
+
+
+            <input type="number" name="precio" placeholder="Precio" required>
+
+            <input id="click" type="submit" value="CrearItem">
+        </form>
     </main>
+
 
 
     <footer>
@@ -37,7 +46,6 @@
     </footer>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/cards.js"></script>
 </body>
 
 </html>

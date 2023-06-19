@@ -1,0 +1,85 @@
+[
+    {
+      "nombre": "Lavadora",
+      "marca": "Samsung",
+      "descripcion": "Lavadora de carga frontal con capacidad de 10 kg",
+      "cantidad": 3,
+      "precio": 599.99
+    },
+    {
+      "nombre": "Refrigerador",
+      "marca": "LG",
+      "descripcion": "Refrigerador de dos puertas con capacidad de 600 litros",
+      "cantidad": 2,
+      "precio": 899.99
+    },
+    {
+      "nombre": "Horno de microondas",
+      "marca": "Panasonic",
+      "descripcion": "Horno de microondas de 1.2 pies cúbicos con funciones avanzadas",
+      "cantidad": 5,
+      "precio": 149.99
+    },
+    {
+      "nombre": "Televisor",
+      "marca": "Sony",
+      "descripcion": "Televisor LED de 55 pulgadas con resolución 4K",
+      "cantidad": 4,
+      "precio": 799.99
+    },
+    {
+      "nombre": "Aspiradora",
+      "marca": "Dyson",
+      "descripcion": "Aspiradora sin cable con tecnología de succión potente",
+      "cantidad": 1,
+      "precio": 349.99
+    },
+    {
+      "nombre": "Licuadora",
+      "marca": "Hamilton Beach",
+      "descripcion": "Licuadora con jarra de vidrio de 1.5 litros y múltiples velocidades",
+      "cantidad": 2,
+      "precio": 59.99
+    },
+    {
+      "nombre": "Cafetera",
+      "marca": "Nespresso",
+      "descripcion": "Cafetera automática con sistema de cápsulas y espumador de leche",
+      "cantidad": 3,
+      "precio": 199.99
+    },
+    {
+      "nombre": "Batidora",
+      "marca": "KitchenAid",
+      "descripcion": "Batidora de pedestal con capacidad de 5 litros y múltiples accesorios",
+      "cantidad": 2,
+      "precio": 249.99
+    },
+    {
+      "nombre": "Plancha de ropa",
+      "marca": "Rowenta",
+      "descripcion": "Plancha de vapor con suela de acero inoxidable y función de apagado automático",
+      "cantidad": 2,
+      "precio": 79.99
+    },
+    {
+      "nombre": "Secadora de ropa",
+      "marca": "Whirlpool",
+      "descripcion": "Secadora de carga frontal con capacidad de 7 kg y múltiples programas",
+      "cantidad": 1,
+      "precio": 499.99
+    },
+    {
+      "nombre": "Ventilador",
+      "marca": "Lasko",
+      "descripcion": "Ventilador de torre con control remoto y oscilación",
+      "cantidad": 3,
+      "precio": 89.99
+    },
+    {
+      "nombre": "Exprimidor de cítricos",
+      "marca": "Breville",
+      "descripcion": "Exprimidor eléctrico con cono de diferentes tamaños y sistema antigoteo",
+      "cantidad": 2
+    }
+]
